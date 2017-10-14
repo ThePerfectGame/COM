@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/FirstPersonAdventure/Scenes/Storage.unity
+  isLoaded: 1
+  isActive: 1
