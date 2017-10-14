@@ -1,0 +1,84 @@
+UI.Common.Yes = Yes
+UI.Common.No = No
+UI.Common.Back = Back
+UI.Common.Cancel = Cancel
+UI.Common.Close = Close
+
+UI.MainMenu.Title = Main Menu
+UI.MainMenu.Continue = Continue
+UI.MainMenu.NewGame = New Game
+UI.MainMenu.Options = Options
+UI.MainMenu.About = Credits
+UI.MainMenu.Exit = Exit
+
+UI.About.Title = Credits
+UI.About.Text = Credits...
+
+UI.Journal.Title = Journal 
+UI.Journal.Tasks = Tasks
+UI.Journal.Notes = Notes
+
+UI.Inventory.Title = Inventory
+UI.Inventory.Use = Use
+UI.Inventory.Unuse = Take off
+
+UI.Options.Title = Options
+UI.Options.Apply = Apply
+UI.Options.Default = Default
+UI.Options.Inverse = Invert mouse
+UI.Options.MouseSence = Mouse sensitivity
+UI.Options.SoundVolume = Sound volume
+UI.Options.Language = Language
+
+UI.Pause.Title = Pause
+UI.Pause.Continue = Continue
+UI.Pause.Options = Options
+UI.Pause.MainMenu = Save and Quit
+
+UI.Death.Title = You are dead
+UI.Death.Load = Load
+UI.Death.MainMenu = Main Menu
+
+UI.Complete.Title = Game completed
+UI.Complete.Restart = Restart
+UI.Complete.MainMenu = Main Menu
+
+UI.Password.Title = Password
+
+UI.Loading.Loading = Loading
+
+UI.Game.Health = Health:
+UI.Game.Radiation = Radiation!
+UI.Game.HintUse =  Press E
+UI.Game.HintDrag = Press LMB
+UI.Game.HintThrow = Press RMB to throw
+
+
+Objects.Cupboard = Cupboard
+Objects.Container = Container
+Objects.Safe = Safe
+Objects.SmartCardsPanel = Smart card panel
+Objects.Note = Note
+
+
+Actions.PlaceRedCard = Insert red smart card
+Actions.PlaceGreenCard = Insert green smart card
+Actions.PlaceBlueCard = Insert blue smart card
+
+Tasks.Escape = Get to the surface
+
+Notifications.NewNote = New note added: {0} (J)
+Notifications.AutoSave = Game saved
+
+Items.Medickit.Name = Medical Kit
+Items.Medickit.Description = Full health restore
+Items.RadiationSuit.Name = Radiation suit
+Items.RadiationSuit.Description = Protects from radiation
+Items.SmartCardRed.Name = Red smart card
+Items.SmartCardGreen.Name = Green smart card
+Items.SmartCardBlue.Name = Blue smart card
+
+Notes.Hint.Name = Hint
+Notes.Hint.Text = You need 3 smart cards to get an access to the surface.\n\nTo unlock the door to the storage the maximum level of electic power is needed.
+Notes.Pwd.Name = Note with password
+Notes.Pwd.Text = Safe password: 1234

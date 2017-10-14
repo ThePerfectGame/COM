@@ -1,0 +1,83 @@
+UI.Common.Yes = Да
+UI.Common.No = Нет
+UI.Common.Back = Назад
+UI.Common.Cancel = Отмена
+UI.Common.Close = Закрыть
+
+UI.MainMenu.Title = Главное Меню
+UI.MainMenu.Continue = Продолжить
+UI.MainMenu.NewGame = Новая Игра
+UI.MainMenu.Options = Настройки
+UI.MainMenu.About = Авторы
+UI.MainMenu.Exit = Выход
+
+UI.About.Title = Авторы
+UI.About.Text = Авторы...
+
+UI.Journal.Title = Журнал 
+UI.Journal.Tasks = Задачи
+UI.Journal.Notes = Заметки
+
+UI.Inventory.Title = Инвентарь
+UI.Inventory.Use = Использовать
+UI.Inventory.Unuse = Убрать
+
+UI.Options.Title = Настройки
+UI.Options.Apply = Применить
+UI.Options.Default = Стандартные
+UI.Options.Inverse = Инверсия мыши
+UI.Options.MouseSence = Чуств. мыши
+UI.Options.SoundVolume = Громкость звуков
+UI.Options.Language = Язык
+
+UI.Pause.Title = Пауза
+UI.Pause.Continue = Продолжить
+UI.Pause.Options = Настройки
+UI.Pause.MainMenu = Сохранить и Выйти
+
+UI.Death.Title = Вы мертвы
+UI.Death.Load = Загрузить
+UI.Death.MainMenu = Главное Меню
+
+UI.Complete.Title = Игра пройдена
+UI.Complete.Restart = Рестарт
+UI.Complete.MainMenu = Главное Меню
+
+UI.Password.Title = Пароль
+
+UI.Loading.Loading = Загрузка
+
+UI.Game.Health = Здоровье:
+UI.Game.Radiation = Радиация!
+UI.Game.HintUse =  Нажмите E
+UI.Game.HintDrag = Нажмите ЛКМ
+UI.Game.HintThrow = Нажмите ПКМ чтобы бросить
+
+
+Objects.Cupboard = Шкаф
+Objects.Container = Контейнер
+Objects.Safe = Сейф
+Objects.SmartCardsPanel = Панель для смарт-карт
+Objects.Note = Записка
+
+Actions.PlaceRedCard = Установить красную карту
+Actions.PlaceGreenCard = Установить зеленую карту
+Actions.PlaceBlueCard = Установить синию карту
+
+Tasks.Escape = Выбраться на поверхность
+
+Notifications.NewNote = Добавлена новая заметка: {0} (J)
+Notifications.AutoSave = Игра сохранена
+
+Items.Medickit.Name = Аптечка
+Items.Medickit.Description = Полностью восстанавливает здоровье
+Items.RadiationSuit.Name = Костюм радиационной защиты 
+Items.RadiationSuit.Description = Защищает от воздействия радиации
+Items.SmartCardRed.Name = Крассная смарт-карта
+Items.SmartCardGreen.Name = Зеленая смарт-карта
+Items.SmartCardBlue.Name = Синяя смарт-карта
+
+Notes.Hint.Name = Подсказка
+Notes.Hint.Text = Для того чтобы открыть выход на поверхность потребуются три смарт карты.\n\nЧтобы разблокировать дверь в хранилище нужно восстановить максимальный уровень электроэнергии.
+Notes.Pwd.Name = Записка с паролем
+Notes.Pwd.Text = Пароль от сейфа: 1234

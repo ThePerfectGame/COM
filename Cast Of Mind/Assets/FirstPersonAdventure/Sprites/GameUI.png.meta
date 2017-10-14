@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 414469d5114ae2542b1fbb92574ba96e
+timeCreated: 1441278857
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Crosshair
+    21300002: PanelBackground
+    21300004: ButtonStandart
+    21300006: HeadBG
+    21300008: BlackBG
+    21300010: ButtonHovered
+    21300012: ButtonPress
+    21300014: ButtonInactive
+    21300016: DarkGreenBackground
+    21300018: SlotSnandart
+    21300020: SlotHover
+    21300022: SlotPress
+    21300024: SlotInactive
+    21300026: SlotSelect
+    21300028: Equip
+    21300030: Loading
+    21300032: GameBackground
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Crosshair
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 233
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PanelBackground
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 235
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 6, y: 6, z: 5, w: 6}
+    - name: ButtonStandart
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 231
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 17, y: 10, z: 17, w: 10}
+    - name: HeadBG
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 221
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BlackBG
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 217
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+    - name: ButtonHovered
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 203
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 17, y: 10, z: 17, w: 10}
+    - name: ButtonPress
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 231
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 17, y: 10, z: 17, w: 10}
+    - name: ButtonInactive
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 203
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 17, y: 10, z: 17, w: 10}
+    - name: DarkGreenBackground
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 202
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+    - name: SlotSnandart
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 231
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+    - name: SlotHover
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 203
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+    - name: SlotPress
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 231
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+    - name: SlotInactive
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 203
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+    - name: SlotSelect
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 175
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 11, y: 10, z: 10, w: 10}
+    - name: Equip
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 191
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Loading
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 153
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GameBackground
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 134
+        width: 135
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 4, z: 0, w: 3}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
