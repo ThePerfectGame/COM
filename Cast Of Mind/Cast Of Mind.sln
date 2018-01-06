@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cast Of Mind", "Cast Of Mind.csproj", "{4C7ACF04-3B47-5507-652B-FF2A11F4A71A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cast Of Mind.Editor", "Cast Of Mind.Editor.csproj", "{EAB6D776-4DFA-0DBB-3BF3-EEE08A8DFAC4}"
