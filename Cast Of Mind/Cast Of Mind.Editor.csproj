@@ -126,16 +126,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FirstPersonAdventure\Scripts\ItemSystem\Editor\ItemsManagerEditor.cs" />
-    <Compile Include="Assets\FirstPersonAdventure\Scripts\Localization\Editor\LocalizationInpector.cs" />
-    <Compile Include="Assets\FirstPersonAdventure\Scripts\NoteSystem\Editor\NoteManagerEditor.cs" />
-    <Compile Include="Assets\FirstPersonAdventure\Scripts\SoundSystem\Editor\SoundsManagerEditor.cs" />
-    <Compile Include="Assets\FirstPersonAdventure\Scripts\TaskSystem\Editor\TaskManagerEditor.cs" />
+    <Compile Include="Assets\Caste Of Mind\Scripts\ItemSystem\Editor\ItemsManagerEditor.cs" />
+    <Compile Include="Assets\Caste Of Mind\Scripts\Localization\Editor\LocalizationInpector.cs" />
+    <Compile Include="Assets\Caste Of Mind\Scripts\NoteSystem\Editor\NoteManagerEditor.cs" />
+    <Compile Include="Assets\Caste Of Mind\Scripts\SoundSystem\Editor\SoundsManagerEditor.cs" />
+    <Compile Include="Assets\Caste Of Mind\Scripts\TaskSystem\Editor\TaskManagerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\FirstPersonAdventure\Localizations\English.txt" />
-    <None Include="Assets\FirstPersonAdventure\Localizations\Russian.txt" />
-    <None Include="Assets\FirstPersonAdventure\ReadMe.txt" />
+    <None Include="Assets\Caste Of Mind\Localizations\English.txt" />
+    <None Include="Assets\Caste Of Mind\Localizations\Russian.txt" />
+    <None Include="Assets\Caste Of Mind\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
