@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Caste Of Mind/Scenes/MainMenu.unity
+- path: Assets/Caste Of Mind/Scenes/CryoWakeUp.unity
   isLoaded: 1
   isActive: 1
