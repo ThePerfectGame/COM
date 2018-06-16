@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Caste Of Mind/Scenes/CryoWakeUp.unity
+- path: Assets/Caste Of Mind/Scenes/TempScene.unity
   isLoaded: 1
   isActive: 1

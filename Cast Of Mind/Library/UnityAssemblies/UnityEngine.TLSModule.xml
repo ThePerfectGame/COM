@@ -2,7 +2,7 @@
 <doc>
   <members>
     <assembly>
-      <name>UnityEngine.VR</name>
+      <name>UnityEngine.TLSModule</name>
     </assembly>
   </members>
 </doc>

@@ -88,7 +88,6 @@ public class GameController : Singleton<GameController>
 
     public void LoadGame()
     {
-        if (Application.isWebPlayer) return;
         ResetGame();
         SaveGameData data = SaveLoadController.LoadGame();
         if (data == null) return;
@@ -115,7 +114,6 @@ public class GameController : Singleton<GameController>
 
     public void SaveGame()
     {
-        if (Application.isWebPlayer) return;
         CurrentRoom = FindObjectOfType<Room>();
         if (CurrentRoom != null)
         {
