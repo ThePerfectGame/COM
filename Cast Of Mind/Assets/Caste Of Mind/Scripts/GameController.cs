@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public enum GameStates
 {
@@ -53,7 +54,7 @@ public class GameController : Singleton<GameController>
     void Start()
     {
         gameState = GameStates.Pause;
-        GameState = Application.loadedLevelName == mainMenuScene ? GameStates.MainMenu : GameStates.Game;
+        GameState = SceneManager.GetActiveScene().name == mainMenuScene ? GameStates.MainMenu : GameStates.Game;
     }
 
     private void Update()
@@ -88,7 +89,6 @@ public class GameController : Singleton<GameController>
 
     public void LoadGame()
     {
-        if (Application.isWebPlayer) return;
         ResetGame();
         SaveGameData data = SaveLoadController.LoadGame();
         if (data == null) return;
@@ -115,14 +115,13 @@ public class GameController : Singleton<GameController>
 
     public void SaveGame()
     {
-        if (Application.isWebPlayer) return;
         CurrentRoom = FindObjectOfType<Room>();
         if (CurrentRoom != null)
         {
-            if (locationsStates.ContainsKey(Application.loadedLevelName))
-                locationsStates[Application.loadedLevelName] = CurrentRoom.SaveState();
+            if (locationsStates.ContainsKey(SceneManager.GetActiveScene().name))
+                locationsStates[SceneManager.GetActiveScene().name] = CurrentRoom.SaveState();
             else
-                locationsStates.Add(Application.loadedLevelName, CurrentRoom.SaveState());
+                locationsStates.Add(SceneManager.GetActiveScene().name, CurrentRoom.SaveState());
         }
 
         SaveGameData data = new SaveGameData();
@@ -134,7 +133,7 @@ public class GameController : Singleton<GameController>
         data.locationsStates = locationsStates;
 
         data.globalValues = Values;
-        data.locationName = Application.loadedLevelName;
+        data.locationName = SceneManager.GetActiveScene().name;
         data.playerPosition = new Vector4Serializer(PlayerController.Instance.transform.position);
         data.playerRotation = new Vector4Serializer(PlayerController.Instance.transform.rotation);
         data.playerHealth = PlayerController.Instance.Health;
@@ -160,10 +159,10 @@ public class GameController : Singleton<GameController>
             CurrentRoom = FindObjectOfType<Room>();
             if (CurrentRoom != null)
             {
-                if (locationsStates.ContainsKey(Application.loadedLevelName))
-                    locationsStates[Application.loadedLevelName] = CurrentRoom.SaveState();
+                if (locationsStates.ContainsKey(SceneManager.GetActiveScene().name))
+                    locationsStates[SceneManager.GetActiveScene().name] = CurrentRoom.SaveState();
                 else
-                    locationsStates.Add(Application.loadedLevelName, CurrentRoom.SaveState());
+                    locationsStates.Add(SceneManager.GetActiveScene().name, CurrentRoom.SaveState());
             }
         }
         StartCoroutine(Loading(locationName, onLoadComplete));
@@ -186,22 +185,22 @@ public class GameController : Singleton<GameController>
     private IEnumerator Loading(string locationName, System.Action onLoadComplete)
     {
         GameState = GameStates.Loading;
-        PrevLocationName = Application.loadedLevelName;
+        PrevLocationName = SceneManager.GetActiveScene().name;
 
-        yield return Application.LoadLevelAsync(locationName);
-        Debug.Log("Loading complete: " + Application.loadedLevelName);
+        yield return SceneManager.LoadSceneAsync(locationName);
+        Debug.Log("Loading complete: " + SceneManager.GetActiveScene().name);
         CurrentRoom = FindObjectOfType<Room>();
         if (CurrentRoom != null)
         {
             CurrentRoom.Enter(PrevLocationName);
-            if (locationsStates.ContainsKey(Application.loadedLevelName))
-                CurrentRoom.LoadState(locationsStates[Application.loadedLevelName]);
+            if (locationsStates.ContainsKey(SceneManager.GetActiveScene().name))
+                CurrentRoom.LoadState(locationsStates[SceneManager.GetActiveScene().name]);
         }
         if (onLoadComplete != null) onLoadComplete();
-        if (Application.loadedLevelName == mainMenuScene && PlayerController.IsInstance) Destroy(PlayerController.Instance.gameObject);
+        if (SceneManager.GetActiveScene().name == mainMenuScene && PlayerController.IsInstance) Destroy(PlayerController.Instance.gameObject);
 
         yield return new WaitForSeconds(0.1f);
-        if (Application.loadedLevelName == mainMenuScene)
+        if (SceneManager.GetActiveScene().name == mainMenuScene)
         {
             GameState = GameStates.MainMenu;
         }

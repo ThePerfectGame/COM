@@ -11,14 +11,12 @@ public class SaveLoadController : MonoBehaviour
     {
         get
         {
-            if (Application.isWebPlayer) return false;
-            else return File.Exists(Path + "/game.save");
+             return File.Exists(Path + "/game.save");
         }
     }
 
     public static void SaveGame(SaveGameData data)
     {
-        if (Application.isWebPlayer) return;
         try
         {
             BinaryFormatter bf = new BinaryFormatter();
@@ -34,7 +32,6 @@ public class SaveLoadController : MonoBehaviour
 
     public static SaveGameData LoadGame()
     {
-        if (Application.isWebPlayer) return null;
         if (IsSave == false) return null;
 
         Debug.Log("Start loading");
@@ -71,7 +68,6 @@ public class SaveLoadController : MonoBehaviour
 
     public static void SaveOptions(OptionsConfig config)
     {
-        if (Application.isWebPlayer) return;
         try
         {
             BinaryFormatter bf = new BinaryFormatter();
@@ -87,7 +83,6 @@ public class SaveLoadController : MonoBehaviour
 
     public static OptionsConfig LoadOptions()
     {
-        if (Application.isWebPlayer) return null;
         if (!File.Exists(Application.persistentDataPath + "/options.save")) return null;
         try
         {
