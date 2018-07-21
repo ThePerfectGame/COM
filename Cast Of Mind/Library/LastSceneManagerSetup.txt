@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Caste Of Mind/Scenes/Generators.unity
+- path: Assets/Caste Of Mind/Scenes/Host.unity
   isLoaded: 1
   isActive: 1

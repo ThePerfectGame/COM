@@ -20,6 +20,22 @@ public enum GameStates
     PasswordInput = 11
 }
 
+public enum GameProgresSate
+{
+    Start = 0,
+    Objective1 = 1,
+    Objective2 = 2,
+    Objective3 = 3,
+    Objective4 = 4,
+    Objective5 = 5,
+    Objective6 = 6,
+    Objective7 = 7,
+    Objective8 = 9,
+    Objective9 = 9,
+    Objective10 = 10,
+    Objective11 = 11,
+}
+
 public class GameController : Singleton<GameController>
 {
     public event System.Action<GameStates> onStateChanged;
